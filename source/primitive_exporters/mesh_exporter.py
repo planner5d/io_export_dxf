@@ -45,7 +45,8 @@ class MeshDXFExporter(BasePrimitiveDXFExporter):
                         entities = self._writeInsert(ob, mx, me.name, **(kwargs))
 
             else: # no other instances, so go the standard way
-                self._standard_way(drawing, me, mx, mx_n)
+                self._standard_way(drawing, me, mx, mx_n, layer=ob.users_collection[0].name.replace(
+                    "IfcBuildingStorey/", ""))
 
         if ob.modifiers and self._settings['apply_modifiers']:
             depsgraph = ctx.evaluated_depsgraph_get()
