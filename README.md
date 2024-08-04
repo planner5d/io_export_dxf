@@ -10,3 +10,7 @@ For more information about building extensions refer to the [documentation](http
 ---
 
 This add-on is offered as it is and maintaned by the community, no support expected.
+
+---
+
+This add-on is under GPLv2 license as listed in https://extensions.blender.org/add-ons/export-autocad-dxf-format-dxf
